@@ -1,0 +1,79 @@
+<Grid
+    xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+	xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	
+	<Grid.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="..\resources\Icons.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Grid.Resources>	
+	
+	<Grid Margin="0,0,0,0" Background="#E0E0E0">
+	
+		<StackPanel Margin="50,5,10,5" Orientation="Vertical" >
+			
+			<!-- SNIPPETS -->
+			<StackPanel Margin="5,25,5,5" Orientation="Horizontal" >
+				
+				<!-- GROUPS -->
+				<StackPanel Margin="0,0,15,0" Width="250" Background="#FFFFFF" HorizontalAlignment="Stretch"  Orientation="Horizontal">
+					<StackPanel  Background="#2196f3" Height="60" Width="60" Orientation="Vertical">
+						<Rectangle Margin="2,15,0,0" Height="30" Width="34">
+							<Rectangle.Fill>
+								<VisualBrush Visual="{StaticResource appbar_group}" />
+							</Rectangle.Fill>
+						</Rectangle>
+					</StackPanel>
+					<StackPanel Width="190" Margin="0,0,0,0" HorizontalAlignment="Stretch" Orientation="Vertical">
+						<TextBlock Margin="0,0,0,0" HorizontalAlignment="Center" Text="15"    FontWeight="Bold" Foreground="#676767" FontSize="26"  ></TextBlock>
+						<TextBlock Margin="0,0,0,0" HorizontalAlignment="Center" Text="GROUPS" Foreground="#676767" FontSize="15"></TextBlock>
+					</StackPanel>
+				</StackPanel>
+				
+				<!-- COMPUTER REGISTERED -->
+				<StackPanel  Margin="0,0,15,0" Width="250" Background="#FFFFFF" HorizontalAlignment="Stretch"  Orientation="Horizontal">
+					<StackPanel  Background="#79c879" Height="60" Width="60" Orientation="Vertical">
+						<Rectangle Margin="2,15,0,0" Height="30" Width="34">
+							<Rectangle.Fill>
+								<VisualBrush Visual="{StaticResource appbar_stock}" />
+							</Rectangle.Fill>
+						</Rectangle>
+					</StackPanel>
+					<StackPanel Width="190" Margin="0,0,0,0" HorizontalAlignment="Stretch" Orientation="Vertical">
+						<TextBlock Margin="0,0,0,0" HorizontalAlignment="Center" Text="24"    FontWeight="Bold" Foreground="#676767" FontSize="26"  ></TextBlock>
+						<TextBlock Margin="0,0,0,0" HorizontalAlignment="Center" Text="COMPUTER REGISTERED" Foreground="#676767" FontSize="15"></TextBlock>
+					</StackPanel>
+				</StackPanel>
+				
+				<!-- OTHER DATAS -->
+				<StackPanel  Margin="0,0,15,0" Width="250" Background="#FFFFFF" HorizontalAlignment="Stretch"  Orientation="Horizontal">
+					<StackPanel  Background="#844884" Height="60" Width="60" Orientation="Vertical">
+						<Rectangle Margin="2,15,0,0" Height="30" Width="34">
+							<Rectangle.Fill>
+								<VisualBrush Visual="{StaticResource appbar_tiles_four}" />
+							</Rectangle.Fill>
+						</Rectangle>
+					</StackPanel>
+					<StackPanel Width="190" Margin="0,0,0,0" HorizontalAlignment="Stretch" Orientation="Vertical">
+						<TextBlock Margin="0,0,0,0" HorizontalAlignment="Center" Text="..."    FontWeight="Bold" Foreground="#676767" FontSize="26"  ></TextBlock>
+						<TextBlock Margin="0,0,0,0" HorizontalAlignment="Center" Text="OTHER DATAS" Foreground="#676767" FontSize="15"></TextBlock>
+					</StackPanel>
+				</StackPanel>
+			
+			</StackPanel>
+			
+			<StackPanel Margin="5,15,5,5" HorizontalAlignment="Left" Orientation="Vertical" >
+				<!-- GEOMAP -->
+				<lvc:GeoMap x:Name="GeoMap" Width="780"  Height="400" Margin="0,0,0,0"  Source="maps\World.xml"  /> 
+			</StackPanel>
+			
+		</StackPanel>	
+		
+    </Grid>
+
+
+</Grid>
